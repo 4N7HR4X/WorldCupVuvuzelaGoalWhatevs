@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="local-httpasyncclient-4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/exploded-aar/com.mashape.unirest/unirest-android/1.0.1/libs/local-httpasyncclient-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

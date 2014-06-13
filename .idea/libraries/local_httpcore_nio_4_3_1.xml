@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="local-httpcore-nio-4.3.1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/exploded-aar/com.mashape.unirest/unirest-android/1.0.1/libs/local-httpcore-nio-4.3.1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

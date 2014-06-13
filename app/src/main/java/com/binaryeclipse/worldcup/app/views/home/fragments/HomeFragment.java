@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
 
     @OnClick(R.id.home_landing_button)
     public void button() {
-        
+
     }
 
     List<List<String>> groups;
@@ -81,6 +81,7 @@ public class HomeFragment extends Fragment {
         final float scale = getResources().getDisplayMetrics().density;
         // Convert the dps to pixels, based on density scale
         return (int) (pixels * scale + 0.5f);
+
     }
 
 }

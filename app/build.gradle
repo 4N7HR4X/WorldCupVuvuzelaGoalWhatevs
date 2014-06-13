@@ -26,6 +26,5 @@ android {
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.mashape.unirest:unirest-android:1.0+'
     compile 'com.jakewharton:butterknife:+'
 }

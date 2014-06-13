@@ -6,7 +6,7 @@ world cup thingy
 
 http://api.stats.foxsports.com.au/3.0/api/sports/football/matches/{match_code}/scoreboard.json?userkey={user_key}
 
-match_code:  
+match_code: -these are all the known codes for the group stage- 
 WC20140101BRACRO  
 WC20140102MEXCMR  
 WC20140103ESPNED  

@@ -17,6 +17,8 @@ public class Utils {
     private static List<Country> listF;
     private static List<Country> listG;
     private static List<Country> listH;
+    
+    private static List<Country> countries = new ArrayList<Country>(){};
 
     public static List<List<Country>> generateGroups() {
         List<List<Country>> groups = new ArrayList<List<Country>>();
@@ -28,7 +30,18 @@ public class Utils {
         groups.add(getListF());
         groups.add(getListG());
         groups.add(getListH());
+
+        for(List<Country> group:groups){
+            countries.addAll(group);
+        }
         return groups;
+    }
+
+    public static List<Country> getCountries() {
+        if(countries.size() <= 0){
+            generateGroups();
+        }
+        return countries;
     }
 
     private static List<Country> getListA() {

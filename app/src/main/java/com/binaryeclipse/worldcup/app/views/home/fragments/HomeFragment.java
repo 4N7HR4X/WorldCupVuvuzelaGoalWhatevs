@@ -31,9 +31,7 @@ public class HomeFragment extends Fragment {
     ExpandableListView list;
 
     @OnClick(R.id.home_landing_button)
-    public void button() {
-
-    }
+    public void button() {}
 
     List<List<Country>> groups;
 

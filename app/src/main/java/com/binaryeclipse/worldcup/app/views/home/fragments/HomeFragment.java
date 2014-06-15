@@ -16,6 +16,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 import com.binaryeclipse.worldcup.app.R;
+import com.binaryeclipse.worldcup.app.utils.Country;
 import com.binaryeclipse.worldcup.app.utils.Utils;
 import com.binaryeclipse.worldcup.app.views.home.adapters.GroupAdapter;
 
@@ -30,11 +31,9 @@ public class HomeFragment extends Fragment {
     ExpandableListView list;
 
     @OnClick(R.id.home_landing_button)
-    public void button() {
+    public void button() {}
 
-    }
-
-    List<List<String>> groups;
+    List<List<Country>> groups;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

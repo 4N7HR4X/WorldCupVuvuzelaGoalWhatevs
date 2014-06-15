@@ -1,9 +1,6 @@
 package com.binaryeclipse.worldcup.app.views.home.fragments;
 
-import java.io.InputStream;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Future;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -21,11 +18,6 @@ import butterknife.OnClick;
 import com.binaryeclipse.worldcup.app.R;
 import com.binaryeclipse.worldcup.app.utils.Utils;
 import com.binaryeclipse.worldcup.app.views.home.adapters.GroupAdapter;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.async.Callback;
-import com.mashape.unirest.http.exceptions.UnirestException;
 
 /**
  * Created by Andras on 2014/06/12.

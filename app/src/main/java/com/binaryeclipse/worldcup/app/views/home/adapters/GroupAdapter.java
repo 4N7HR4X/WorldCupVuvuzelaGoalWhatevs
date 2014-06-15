@@ -12,6 +12,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 import com.binaryeclipse.worldcup.app.R;
+import com.binaryeclipse.worldcup.app.utils.Country;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -21,11 +22,11 @@ import butterknife.InjectView;
  */
 public class GroupAdapter extends BaseExpandableListAdapter {
 
-    private final List<List<String>> children;
+    private final List<List<Country>> children;
     private final Context context;
 //    private final List<String> headers;
 
-    public GroupAdapter(Context context, /*List<String> headers, */List<List<String>> children) {
+    public GroupAdapter(Context context, /*List<String> headers, */List<List<Country>> children) {
         this.context = context;
 //        this.headers = headers;
         this.children = children;
@@ -39,7 +40,7 @@ public class GroupAdapter extends BaseExpandableListAdapter {
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        List<String> group = getGroup(groupPosition);
+        List<Country> group = getGroup(groupPosition);
         if (group != null) {
             return group.size();
         }
@@ -47,9 +48,9 @@ public class GroupAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public List<String> getGroup(int groupPosition) {
+    public List<Country> getGroup(int groupPosition) {
         int index = 0;
-        for (List<String> list : children) {
+        for (List<Country> list : children) {
             if (index == groupPosition) {
                 return list;
             }
@@ -59,8 +60,8 @@ public class GroupAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public String getChild(int groupPosition, int childPosition) {
-        List<String> group = getGroup(groupPosition);
+    public Country getChild(int groupPosition, int childPosition) {
+        List<Country> group = getGroup(groupPosition);
         if (group != null) {
             return group.get(childPosition);
         }
@@ -104,7 +105,7 @@ public class GroupAdapter extends BaseExpandableListAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.child_view, null);
             viewHolder = new ChildViewHolder(convertView);
         }
-        viewHolder.childIdentifier.setText(getChild(groupPosition, childPosition));
+        viewHolder.childIdentifier.setText(getChild(groupPosition, childPosition).name);
         return convertView;
     }
 
